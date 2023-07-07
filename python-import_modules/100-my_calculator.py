@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import sys
-from calculator_1 import add, mul, sub, div
+import calculator_1
 
 
 def operation(*args):
@@ -12,16 +12,16 @@ def operation(*args):
         b = args[2]
         s = args[1]
         if s == "+":
-            print(f"{a} + {b} = {add(int(a), int(b))}")
+            print(f"{a} + {b} = {calculator_1.add(int(a), int(b))}")
             exit(0)
         elif s == "-":
-            print(f"{a} - {b} = {sub(int(a), int(b))}")
+            print(f"{a} - {b} = {calculator_1.sub(int(a), int(b))}")
             exit(0)
         elif s == "*":
-            print(f"{a} * {b} = {mul(int(a), int(b))}")
+            print(f"{a} * {b} = {calculator_1.mul(int(a), int(b))}")
             exit(0)
         elif s == "/":
-            print(f"{a} / {b} = {div(int(a), int(b))}")
+            print(f"{a} / {b} = {calculator_1.div(int(a), int(b))}")
             exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
