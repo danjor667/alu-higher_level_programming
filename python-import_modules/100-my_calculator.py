@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import sys
-from calculator_1 import add, mul, div, sub
+from calculator_1 import add, mul, sub, div
 
 
 def operation(*args):
