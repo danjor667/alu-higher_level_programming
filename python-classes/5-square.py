@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 defineing a class Square
+
 """
 
 
@@ -38,7 +39,7 @@ class Square():
             raise ValueError("size must be > 0")
         self.__size = size
 
-    def def my_print(self):
+    def my_print(self):
         """
         print a sqaure to stdout using "#"
         """
