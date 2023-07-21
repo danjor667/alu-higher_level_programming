@@ -34,9 +34,9 @@ class Square():
         """
         property setter
         """
-        if not isinstance(position, tuple)
-        or len(position) != 2
-        or not isinstance(position(0), int)
+        if not isinstance(position, tuple)\
+        or len(position) != 2\
+        or not isinstance(position(0), int)\
         or not isinstance(position(1), int):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
