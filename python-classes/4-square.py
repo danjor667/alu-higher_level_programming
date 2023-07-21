@@ -12,7 +12,7 @@ class Square():
         """
         initializing an instance
         """
-        self.__size = size
+        self.size = size
 
     def area(self):
         """
