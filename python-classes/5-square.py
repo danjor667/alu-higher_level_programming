@@ -42,9 +42,9 @@ class Square():
         """
         print a sqaure to stdout using "#"
         """
-        sym = "#" * self.size
-        if self.size == 0:
+        sym = "#" * self.__size
+        if self.__size == 0:
             print("")
             return
-        for i in range(self.size):
+        for i in range(self.__size):
             print(sym)
