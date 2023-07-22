@@ -3,6 +3,7 @@
 class Node
 """
 
+
 class Node():
     """
     defining a clas Node
@@ -58,15 +59,13 @@ class SinglyLinkedList():
         """
         initilizing an instance
         """
-        self.head = None
+        self.__head = None
 
     def __str__(self):
         """
         printing out the nodes in the list
         """
-        if self.head is None:
-            return
-        current = self.head
+        current = self.__head
         my_list = []
         while current is not None:
             my_list.append(str(current.data))
@@ -78,13 +77,18 @@ class SinglyLinkedList():
         insert a node in the respective sorted position
         """
         node = Node(value)
-        if self.head is None:
-            self.head = node
-        current = self.head
-        while current is not None:
-            if current.next_node is None:
-                current.next_node = node
-            if current.data < node.data and current.next_node.data >= node.data:
+        if self.__head is None:
+            self.__head = node
+            return
+        current = self.__head
+        if node.data <= current.data:
+            node.next_node = current
+            self.__head = node
+            return
+        while current.next_node is not None:
+            if node.data <= current.next_node.data:
                 node.next_node = current.next_node
                 current.next_node = node
+                return
             current = current.next_node
+        current.next_node = node
