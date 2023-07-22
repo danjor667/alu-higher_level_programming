@@ -35,7 +35,7 @@ class Node():
         property setter
         """
         if not isinstance(data, int):
-            raise TypeError("data must be and integer")
+            raise TypeError("data must be an integer")
         self.__data = data
 
     @next_node.setter
