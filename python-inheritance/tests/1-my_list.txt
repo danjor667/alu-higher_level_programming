@@ -2,7 +2,35 @@ test for the Class MyList()
 Return:
 	sorted list
 ===================================
+
+testing the print_sorted()
+--------------------------
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList([10,9,8,7,6,5,4,3,2,1])
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+testing append()
+----------------
+>>> my_list = MyList([])
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[5]
+
+testing empty list and __str__
+------------------------------
+>>> my_list = MyList([])
+>>> print(my_list)
+[]
+>>> my_list.print_sorted()
+[]
+
+testing non sorted append
+-------------------------
+>>> my_list = MyList([])
+>>> my_list.append(6)
+>>> my_list.append(9)
+>>> my_list.append(0)
+>>> my_list.print_sorted()
+[0, 6, 9]
+
