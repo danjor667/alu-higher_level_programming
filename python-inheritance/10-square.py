@@ -14,12 +14,13 @@ class Square(Rectangle):
         """
         inisilising an obj
         """
-        super().__init__(self, size, size)
+        super().__init__(self, width, height)
         super().integer_validator("size", size)
-        self.__size = size
+        self.__width = size
+        self._height = size
 
     def area(self):
         """
         calculating the size
         """
-        return self.__size ** 2
+        return self.__width ** 2
