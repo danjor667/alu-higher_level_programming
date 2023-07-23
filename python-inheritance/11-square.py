@@ -2,7 +2,7 @@
 """
 a class Square
 """
-Rectangle = __import__('9-rectangle.py').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -14,6 +14,7 @@ class Square(Rectangle):
         inisilising an obj
         """
         super().integer_validator("size", size)
+        super().__init__(size, size)
 
     def area(self):
         """
