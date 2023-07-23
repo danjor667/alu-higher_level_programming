@@ -26,4 +26,4 @@ class Square(Rectangle):
         """
         string representation of obj
         """
-        return (f"[Square] {self.__width}/{self.__width}")
+        return (f"[Square] {self.__size}/{self.__size}")
