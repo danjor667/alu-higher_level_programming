@@ -22,4 +22,4 @@ class Square(Rectangle):
         """
         calculating the size
         """
-        return self.__width ** 2
+        return self.__size ** 2
