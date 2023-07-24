@@ -17,4 +17,3 @@ def append_after(filename="", search_string="", new_string=""):
             lines.insert(idx + 1, new_string)
     with open(filename, "w") as f:
         f.write("".join(lines))
-
