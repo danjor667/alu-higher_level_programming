@@ -15,6 +15,6 @@ def append_after(filename="", search_string="", new_string=""):
     for idx, line in enumerate(lines):
         if search_string in line:
             lines.insert(idx + 1, new_string)
-    with open(filenane, "w") as f:
+    with open(filename, "w") as f:
         f.write("/n".join(lines))
 
