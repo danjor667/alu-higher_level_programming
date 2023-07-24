@@ -46,7 +46,7 @@ testing non sorted append() of negative
 testing for new list returned
 -----------------------------
 >>> my_list = MyList([3,2,1])
->>> new_list = my_list.print_sorted()
+>>> my_list.print_sorted()
 [1, 2, 3]
->>> print(new_list == my_list)
-False
+>>> print(my_list)
+[3, 2, 1]
