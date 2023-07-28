@@ -19,4 +19,4 @@ def append_after(filename="", search_string="", new_string=""):
             lines.insert(i + 1, new_string)
     with open(filename, "w") as f:
         for line in lines:
-            f.write(lines)
+            f.write(line)
