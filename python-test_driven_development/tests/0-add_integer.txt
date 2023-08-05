@@ -47,3 +47,9 @@ test case: when a in infinite
 >>> add_integer(float('inf'))
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
+
+test case: when NaN is passed
+-----------------------------
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
