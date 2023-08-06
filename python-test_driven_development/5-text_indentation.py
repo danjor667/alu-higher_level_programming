@@ -14,4 +14,5 @@ def text_indentation(text):
     for letter in text:
         if letter in s:
             print(letter)
-        print(letter, end="")
+        else:
+            print(letter, end="")
