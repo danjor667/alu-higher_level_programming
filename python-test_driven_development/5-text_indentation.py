@@ -15,11 +15,11 @@ def text_indentation(text):
     while i < len(text):
         if text[i] in s:
             print(text[i], end="")
-            if i + 1 == len(text):
-                return
-            else:
+            if i + 1 < len(text):
                 print("\n" + text[i+1])
                 i += 1
+            else:
+                return
         else:
             print(text[i], end="")
         i += 1
