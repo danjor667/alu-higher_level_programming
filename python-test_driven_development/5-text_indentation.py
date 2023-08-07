@@ -24,4 +24,3 @@ def text_indentation(text):
             print(line, end="")
         else:
             print(line + "\n")
-
