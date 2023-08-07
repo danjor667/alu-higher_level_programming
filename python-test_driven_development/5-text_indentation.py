@@ -17,6 +17,7 @@ def text_indentation(text):
         current_line + char
         if char in s:
             lines.append(current_line.strip())
+            current_line = ""
     lines.append(current_line.strip())
     for line in lines:
         if line == line[-1]:
