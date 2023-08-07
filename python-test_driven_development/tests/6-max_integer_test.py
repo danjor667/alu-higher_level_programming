@@ -51,7 +51,7 @@ class TestMaxInteger(unittest.TestCase):
         does a list of sigle element works
         """
         my_list = [6]
-        self.assertEqual(max_integr(my_list), 6)
+        self.assertEqual(max_integer(my_list), 6)
 
     if __name__ == "__main__":
         unittest.main()
