@@ -11,13 +11,16 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     s = [".", "?", ":"]
-    i = 0
-    while i < len(text):
-        if text[i] == " ":
-            continue
-        elif text[i] in s:
-            print(text[i], end="")
-            print("\n")
+    lines == []
+    current_line = ""
+    for char in text:
+        current_line + char
+        if char in s:
+            lines.append(current_line.strip())
+    lines.append(current_line.strip())
+    for line in lines:
+        if line == line[-1]:
+            print(line)
         else:
-            print(text[i], end="")
-        i += 1
+            print(line)
+            print("\n")
