@@ -46,5 +46,12 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertRaises((TypeError, ValueError), max_integer, 5)
 
+    def test_max_single_el(self):
+        """
+        does a list of sigle element works
+        """
+        my_list = [6]
+        self.assertEqual(max_integr(my_list), 6)
+
     if __name__ == "__main__":
         unittest.main()
