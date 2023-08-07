@@ -15,7 +15,7 @@ def text_indentation(text):
     while i < len(text):
         if text[i] == " ":
             continue
-        if text[i] in s:
+        elif text[i] in s:
             print(text[i], end="")
             print("\n")
         else:
