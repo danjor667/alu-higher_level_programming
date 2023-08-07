@@ -20,7 +20,7 @@ def text_indentation(text):
             current_line = ""
     lines.append(current_line.strip())
     for line in lines:
-        if line = lines[len(lines) - 1]:
+        if line == lines[len(lines) - 1]:
             print(line, end="")
         else:
             print(line + "\n")
