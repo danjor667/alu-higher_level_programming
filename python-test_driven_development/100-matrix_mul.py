@@ -45,7 +45,7 @@ def matrix_mul(m_a, m_b):
     if not all(test_int(x) for x in m_a)\
             and not all(test_float(x) for x in m_a):
         raise TypeError("m_a should contain only integers or floats")
-    if not all(test_int(X) for x in m_b)\
+    if not all(test_int(x) for x in m_b)\
             and not all(test_float(x) for x in m_b):
         raise TypeError("m_b should contain only integers or floats")
     if not test_row(m_a):
