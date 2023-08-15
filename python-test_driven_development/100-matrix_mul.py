@@ -30,7 +30,7 @@ def matrix_mul(m_a, m_b):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
-    if not all(isinstanc(x, list) for x in m_a):
+    if not all(isinstance(x, list) for x in m_a):
         raise TypeError("m_a must be a list of lists")
     if not all(isinstance(x, list) for x in m_b):
         raise TypeError("m_b must be a list of lists")
