@@ -24,8 +24,6 @@ def matrix_mul(m_a, m_b):
     """
     doc
     """
-    if len(m_a[0]) != len(m_b):
-        raise ValueError("m_a and m_b can't be multiplied")
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
@@ -52,6 +50,8 @@ def matrix_mul(m_a, m_b):
         raise TypeError("each row of m_a must be of the same size")
     if not test_row(m_b):
         raise TypeError("each row of m_b must be of the same size")
+    if len(m_a[0]) != len(m_b):
+        raise ValueError("m_a and m_b can't be multiplied")
 
     r1 = []
     i1 = 0
