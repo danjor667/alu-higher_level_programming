@@ -33,10 +33,11 @@ class Base():
         """
         if list_dictionaries is None or list_dictionaries == []:
             return str([])
-        elif type(list_dictionaries) == list and all(isinstance(ele, dict) for ele in list_dictionaries):
+        elif type(list_dictionaries) == list and\
+                all(isinstance(ele, dict) for ele in list_dictionaries):
             return json.dumps(list_dictionaries)
         else:
-            return str([])
+            raise TypeError("epecting list of dictionaries")
 
     @classmethod
     def save_to_file(cls, list_objs):
