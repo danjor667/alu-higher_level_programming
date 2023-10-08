@@ -15,12 +15,11 @@ if (process.argv.length === 3) {
         } else if (key in dict && ele.completed === false) {
           continue;
         } else {
-          dict[key] = ele.completed ? 1 : 0;
-        }
-      }
-      for (const key of Object.keys(dict)) {
-        if (dict[key] === 0) {
-          delete dict.key;
+          if (ele.completed === true) {
+            dict[key] = 1;
+          } else {
+            continue;
+          }
         }
       }
       console.log(dict);
