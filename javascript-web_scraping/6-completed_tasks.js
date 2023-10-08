@@ -18,6 +18,11 @@ if (process.argv.length === 3) {
           dict[key] = ele.completed ? 1 : 0;
         }
       }
+      for (const key of Object.keys(dict)) {
+        if (dict.key === 0) {
+          delete dict[key];
+        }
+      }
       console.log(dict);
     }
   });
