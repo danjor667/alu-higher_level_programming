@@ -19,8 +19,8 @@ if (process.argv.length === 3) {
         }
       }
       for (const key of Object.keys(dict)) {
-        if (dict.key === 0) {
-          delete dict[key];
+        if (dict[key] === 0) {
+          delete dict.key;
         }
       }
       console.log(dict);
